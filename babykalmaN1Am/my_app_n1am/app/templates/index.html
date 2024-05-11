@@ -66,6 +66,30 @@
                     </div>
                 </div>
 
+                <div class="w3-card-4 w-margin w3-white">
+                    <div class="w3-container">
+                        <h3><b>Project Members</b></h3>
+                    </div>
+
+                    <div class="w3-container">
+                        <table>
+                            <tr>
+                                <th>Member</th>
+                                <th>Description</th>
+                            </tr>
+                            
+                            {% for x in obj %}
+                            <tr>
+                                <td>{{x.name}}</td>
+                                <td>{{x.description}}</td>
+                            </tr>
+                            {% endfor %}
+
+                        </table>
+                    </div>
+                </div>
+
+
 
             </div>
 
@@ -80,52 +104,57 @@
                     </div>
                 </div>
 
+                <hr>
+                <!-- Features -->
+
+                <div class="w3-card w3-margin">
+                    <div class="w3-container w3-padding">
+                        <h4>Features</h4>
+                    </div>
+
+                    <ul class="w3-ul w3-hoverable w3-white">
+                        <li class="w3-padding-16">
+                            <span class="w3-large">Feature1</span><br>
+                            <span>Open Gifting for Organization Members</span>
+                        </li>
+                        <li class="w3-padding-16">
+                            <span class="w3-large">Feature2</span><br>
+                            <span>Secret Santa Roulette</span>
+                        </li>
+                        <li class="w3-padding-16">
+                            <span class="w3-large">Feature3</span><br>
+                            <span>Sharing of Wishlist</span>
+                        </li>
+                    </ul>
+                </div>
+                </hr>
+
+                <!-- Labels/tags -->
+                <div class="w3-card w3-margin">
+                    <div class="w3-container w3-padding">
+                        <h4>Tags</h4>
+                    </div>
+                    <div class="w3-container w3-white">
+                        <p>
+                            <span class="w3-tag w3-black w3-margin-bottom">Wishlist</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Charity</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Organization</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Gift</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Christmas</span>
+                            <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Birthday</span>
+                        </p>
+                    </div>
+                </div>
+            
+
+
             </div>
 
 
-            <hr>
-            <!-- Features -->
-
-            <div class="w3-card w3-margin">
-                <div class="w3-container w3-padding">
-                    <h4>Features</h4>
-                </div>
-
-                <ul class="w3-ul w3-hoverable w3-white">
-                    <li class="w3-padding-16">
-                        <span class="w3-large">Feature1</span><br>
-                        <span>Open Gifting for Organization Members</span>
-                    </li>
-                    <li class="w3-padding-16">
-                        <span class="w3-large">Feature2</span><br>
-                        <span>Secret Santa Roulette</span>
-                    </li>
-                    <li class="w3-padding-16">
-                        <span class="w3-large">Feature3</span><br>
-                        <span>Sharing of Wishlist</span>
-                    </li>
-                </ul>
-            </div>
-            </hr>
+            
 
 
-            <!-- Labels/tags -->
-            <div class="w3-card w3-margin">
-                <div class="w3-container w3-padding">
-                    <h4>Tags</h4>
-                </div>
-                <div class="w3-container w3-white">
-                    <p>
-                        <span class="w3-tag w3-black w3-margin-bottom">Wishlist</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Charity</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Organization</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Gift</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Christmas</span>
-                        <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Birthday</span>
-                    </p>
-
-                </div>
-            </div>
+            
         </div>
     </div>
 
